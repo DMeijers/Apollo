@@ -12,9 +12,17 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  }
+    path: 'mail',
+    loadChildren: () => import('./mail/mail.module').then( m => m.MailPageModule)
+  },
+  {
+    path: 'company',
+    loadChildren: () => import('./company/company.module').then( m => m.CompanyPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
 ];
 
 @NgModule({
